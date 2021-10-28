@@ -28,5 +28,7 @@ describe('counter testing', () => {
   test("render the click event of increment button and increment counter value", () => {
     wrapper.find("#increment-btn").simulate('click');
     expect(wrapper.find("#counter-value").text()).toBe("1");
+    wrapper.find("#decrement-btn").simulate('click');
+    expect(wrapper.find("#counter-value").text()).toBe("0");
   });
 });
