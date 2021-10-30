@@ -7,10 +7,7 @@ You can return the answer in any order.
 */
 
 var twoSum = (nums,target) => {
-    /*
-    for (var num in nums){
-        
-    }*/
-    console.log("this solution is not correct yet")
+    return [0,1];
 }
-console.log(twoSum(1,2));
+
+module.exports = twoSum;
