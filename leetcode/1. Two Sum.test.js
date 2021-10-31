@@ -7,3 +7,7 @@ test('1.', () => {
 test('2.', () => {
   expect(Two_Sum([3,2,4],6)).toEqual([1,2]);
 })
+
+test('3.', () => {
+  expect(Two_Sum([3,3],6)).toEqual([0,1]);
+})

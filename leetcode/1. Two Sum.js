@@ -7,7 +7,18 @@ You can return the answer in any order.
 */
 
 var twoSum = (nums,target) => {
-    return [0,1];
+    let numObject = {};
+
+    for(let i = 0; i < nums.length; i++){
+        let thisNum = nums[i];
+        numObject[thisNum] = i;
+    }
+    for(var i = 0; i < nums.length; i++){
+        let diff = target - nums[i];
+        if(numObject.hasOwnProperty(diff) && numObject[diff] !== i){
+            return [i, numObject[diff]];
+        }
+    }
 }
 
 module.exports = twoSum;
