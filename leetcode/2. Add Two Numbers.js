@@ -1,4 +1,10 @@
 var addTwoNumbers = (l1,l2) => {
+
+    function ListNode(val){
+        this.val = val;
+        this.next = null;
+    }
+
     let head = new ListNode(0)
     let node = head
     let carry = 0
