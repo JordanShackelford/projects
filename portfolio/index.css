@@ -1,12 +1,13 @@
 :root {
     --jumbotron-padding-y: 3rem;
   }
-  
+
   .jumbotron {
     padding-top: var(--jumbotron-padding-y);
     padding-bottom: var(--jumbotron-padding-y);
     margin-bottom: 0;
-    background-image:url('background.png')
+    background-image:url('background.png');
+    color:white;
   }
   @media (min-width: 768px) {
     .jumbotron {
