@@ -11,10 +11,12 @@
     for(var i = 0; i < s.length; i++){
         //check if the next character is included in our current string
         if(currentStr.includes(s[endingIndex])){
-            strings += s.join(startingIndex, endingIndex);
+            console.log(s.join(startingIndex,endingIndex));
+            strings.push(s.join(startingIndex, endingIndex));
             startingIndex = endingIndex;
         } else {
             endingIndex += 1;
+            currentStr += s[endingIndex];
         }
     }
     return strings;
