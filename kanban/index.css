@@ -1,4 +1,11 @@
 .card{
     height:80vh;
     max-width:20vw;
+    display:inline-block;
+}
+
+#main-container{
+    border:1px solid black;/* just for testing so i can see the border*/
+    margin:auto;
+    margin-top:10vh;
 }
