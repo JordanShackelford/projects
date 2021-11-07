@@ -7,11 +7,20 @@
   box-shadow: 10px 10px 5px #ccc;
 }
 
+.album{
+  background: #EB3349;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
   .jumbotron {
     padding-top: var(--jumbotron-padding-y);
     padding-bottom: var(--jumbotron-padding-y);
     margin-bottom: 0;
     background-image:url('background.png');
+    height:100%;
+    width:100%;
+    background-size:cover;
     color:white;
   }
   @media (min-width: 768px) {
