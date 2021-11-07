@@ -2,9 +2,18 @@
     --jumbotron-padding-y: 3rem;
   }
 
-.zoom:hover{
+.card:hover{
   transform:scale(1.1);
   box-shadow: 10px 10px 5px #ccc;
+}
+
+.card-body{
+  background-color:#212529;
+}
+
+.card{
+  border:1px solid #212529;
+  color:white;
 }
 
 .album{
