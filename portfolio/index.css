@@ -4,7 +4,7 @@
 
 .card:hover{
   transform:scale(1.1);
-  box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-body{
@@ -61,3 +61,6 @@
   }
   
   .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  .container{
+    margin-top:1%;
+  }
