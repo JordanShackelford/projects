@@ -2,10 +2,20 @@ import React, { Component } from 'react'
 import { Button, Form, Container, Header } from 'semantic-ui-react'
 import './App.css';
 
+submitHandler = e => {
+  e.preventDefault();
+  console.log(this.state);
+
+  axios.post('', this.state)
+  .then(response => {
+    console.log(response);
+  })
+}
+
 export default class App extends Component {
   constructor(props) {
     super(props)
-
+  
     this.state = {
        name: '',
        age: '',
@@ -15,15 +25,16 @@ export default class App extends Component {
   }
 
   changeHandler = (e) => {
-    this.setState({[http://e.target.name] : http://e.target.value})}
+    this.setState({[e.target.name] : e.target.value})
+  }
 
   submitHandler = e => {
     e.preventDefault();
     console.log(this.state);
-  },
-
+  }
+  
   render() {
-    const { name, age, salary, hobby } = this.state;    (*)
+    const { name, age, salary, hobby } = this.state;    
     return (
       <Container fluid className="container">
         <Header as='h2'>React Google Sheets!</Header>
@@ -44,7 +55,7 @@ export default class App extends Component {
             <label>Hobby</label>
             <input placeholder='Enter your hobby' type="text" name = "hobby" value = {hobby} onChange={this.changeHandler}/>
           </Form.Field>
-
+          
           <Button color="blue" type='submit'>Submit</Button>
         </Form>
       </Container>
