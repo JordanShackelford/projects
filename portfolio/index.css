@@ -69,5 +69,9 @@
   
   .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
-
-  
+  .circle{
+    border:1px solid black;
+    border-radius:40%;
+    padding:1%;
+    background-color:rgba(255, 0, 0, 0.2);
+  }
