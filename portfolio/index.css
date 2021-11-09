@@ -25,13 +25,16 @@
 }
 
   .jumbotron {
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     padding-top: var(--jumbotron-padding-y);
     padding-bottom: var(--jumbotron-padding-y);
     margin-bottom: 0;
-    background-image:url('background.png');
+    background-color:white;
     height:100%;
     width:100%;
-    background-size:cover;
     color:white;
     border:15px solid #212529;
     border-top:none;
