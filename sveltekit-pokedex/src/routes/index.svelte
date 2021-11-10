@@ -1,6 +1,6 @@
 <script>
     import {pokemon} from "../stores/pokestore";
-    console.log($pokemon);
+    import PokemanCard from "src/components/pokemanCard.svelte";
 </script>
 
 <svelte:head>
