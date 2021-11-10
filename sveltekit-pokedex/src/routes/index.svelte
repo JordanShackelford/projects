@@ -9,5 +9,5 @@
 <h1 class="text-4xl text-center my-8 uppercase">Svelte Kit Pokedex</h1>
 
 {#each $pokemon as pokeman}
-<p>{PokemanCard pokeman={pokeman}}</p>
+    <PokemanCard pokeman={pokeman}/>
 {/each}
