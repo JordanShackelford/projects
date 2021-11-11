@@ -75,3 +75,9 @@
     padding:1%;
     background-color:rgba(255, 0, 0, 0.2);
   }
+
+  // make button backround match border color of cards
+  .btn{
+    background-color:#212529;
+  }
+
