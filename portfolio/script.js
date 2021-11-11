@@ -1,5 +1,7 @@
 //add hvr-skew class to buttons
 $(document).ready(function(){
+
+
     //hide project1 through project 9 and every second display a random one again
     $("#project1").hide();
     $("#project2").hide();
@@ -22,6 +24,17 @@ $(document).ready(function(){
         $("#project8").hide();
         $("#project9").hide();
         var random = Math.floor(Math.random() * 9) + 1;
+        //give it a random background color before showing
+        $("#project" + random).css("background-color", randomColor());
+        function randomColor(){
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            return "rgb(" + r + ", " + g + ", " + b + ")";
+        }
         $("#project" + random).show();
+        
     }, 2000);
+
+   
 });
