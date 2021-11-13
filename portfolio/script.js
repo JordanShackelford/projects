@@ -1,6 +1,8 @@
 //add hvr-skew class to buttons
 $(document).ready(function(){
-
+    //prevent page from growing and shrink the jumbotron so that you can see the entire project div
+    $('body').css('height', '100%');
+    $('body').css('overflow', 'hidden');
 
     //hide project1 through project 9 and every second display a random one again
     $("#project1").hide();
