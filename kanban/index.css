@@ -1,11 +1,12 @@
-.card{
-    height:80vh;
-    max-width:20vw;
-    display:inline-block;
+.task, .container{
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 20px;
+
 }
 
-#main-container{
-    border:1px solid black;/* just for testing so i can see the border*/
-    margin:auto;
-    margin-top:10vh;
-}

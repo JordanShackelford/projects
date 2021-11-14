@@ -37,6 +37,5 @@ $(document).ready(function(){
         $("#project" + random).show();
         
     }, 2000);
-
    
 });
