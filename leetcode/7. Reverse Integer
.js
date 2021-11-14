@@ -3,5 +3,5 @@
  * @return {number}
  */
  var reverse = function(x) {
-    
+
 };
