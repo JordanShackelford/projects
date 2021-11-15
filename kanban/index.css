@@ -13,12 +13,10 @@
 
 .container{
     background:maroon;
-    color:white;
     border:5px solid black;
     //give text a shadow
     text-shadow: 2px 2px 4px #000000;
-    //give text a thick outline
-    outline: 5px solid black;
+    color:white;
 }
 
 .task{

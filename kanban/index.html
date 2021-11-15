@@ -2,18 +2,26 @@
     <link rel="stylesheet" href="index.css" />  
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+    <!-- include the hover animations javascript library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"></script>
+
 </head>
 
 <body>
     <div class = "maincontainer">
         <div class="container">
             <h1>TODO</h1>
-            <div class="task">
+            <div class="task hvr-grow"
                 <p>Walk the dog</p>
             </div>
             <div class="task">
                 <p>Do the dishes</p>
             </div>
+
+            
+            <input class="input" type="text" id="task" placeholder="Add a task...">
+            <button class="add">New item</button>
+
         </div>
     
         <div class="container">
@@ -21,6 +29,9 @@
             <div class="task">
                 <p>Take the trash out</p>
             </div>
+
+            <input class="input" type="text" id="task" placeholder="Add a task...">
+            <button class="add">New item</button>
         </div>
     
         <div class="container">
@@ -28,6 +39,9 @@
             <div class="task">
                 <p>Vacuum</p>
             </div>
+
+            <input class="input" type="text" id="task" placeholder="Add a task...">
+            <button class="add">New item</button>
     </div>
     
 
