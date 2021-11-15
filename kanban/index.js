@@ -1,6 +1,51 @@
-//make .task draggable
-$docuemnt.ready(function(){
-    $(".task").draggable();
-});
 
-$(".task").draggable();
+$(document).ready(function(){
+    /* make .task draggable
+    if it is still in the same .container on release, leave it in place
+    if it is moved to another .container, remove it from the old one and add it to the new one
+    */
+    $('.task').draggable({
+        revert: 'invalid',
+        start: function(event, ui){
+            $(this).addClass('dragging');
+        },
+        stop: function(event, ui){
+            $(this).removeClass('dragging');
+        }
+    });
+
+    /* make .container droppable
+    if it is dropped on a .container, add the .task to that .container
+    if it is dropped on a .task, move the .task to the .container
+    */
+    $('.container').droppable({
+        drop: function(event, ui){
+            var dropped = ui.draggable;
+            var droppedOn = this;
+
+            if ($(dropped).hasClass('task')){
+                $(dropped).detach().css({top: 0, left: 0}).appendTo($(droppedOn));
+            } else {
+                $(dropped).detach().css({top: 0, left: 0}).appendTo($(droppedOn));
+            }
+        }
+    });
+
+    /* make .container sortable
+    if it is dropped on a .container, add the .task to that .container
+    if it is dropped on a .task, move the .task to the .container
+    */
+    $('.container').sortable({
+        drop: function(event, ui){
+            var dropped = ui.draggable;
+            var droppedOn = this;
+
+            if ($(dropped).hasClass('task')){
+                $(dropped).detach().css({top: 0, left: 0}).appendTo($(droppedOn));
+            } else {
+                $(dropped).detach().css({top: 0, left: 0}).appendTo($(droppedOn));
+            }
+        }
+    });
+
+});
