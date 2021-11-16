@@ -38,4 +38,9 @@ $(document).ready(function(){
         
     }, 2000);
    
+    //open a drop-down menu when .navbar-toggle is clicked
+    $(".navbar-toggle").click(function(){
+        $("#myDropdown").toggle();
+    });
+   
 });
