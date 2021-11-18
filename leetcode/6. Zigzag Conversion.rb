@@ -1,27 +1,21 @@
-/**
- * @param {string} s
- * @param {number} numRows
- * @return {string}
- */
- var convert = function(s, numRows) {
-    if (numRows === 1) {
-        return s;
-    }
-    var result = [];
-    var row = 0;
-    var step = 1;
-    for (var i = 0; i < s.length; i++) {
-        if (row === 0) {
-            step = 1;
-        } else if (row === numRows - 1) {
-            step = -1;
-        }
-        result[row] = result[row] || '';
-        result[row] += s[i];
-        row += step;
-    }
-    return result.join('');
-};
-
-/* Runtime: 104 ms, faster than 68.62% of JavaScript online submissions for Zigzag Conversion.
-Memory Usage: 43.2 MB, less than 63.72% of JavaScript online submissions for Zigzag Conversion. */
+def convert(s, num_rows)
+    return s if num_rows == 1
+    rows = Array.new(num_rows) { Array.new }
+    index = 0
+    row = 0
+    down = true
+    s.each_char do |char|
+      rows[row] << char
+      if down
+        row += 1
+      else
+        row -= 1
+      end
+      if row == num_rows - 1
+        down = false
+      elsif row == 0
+        down = true
+      end
+    end
+    rows.flatten.join
+end
